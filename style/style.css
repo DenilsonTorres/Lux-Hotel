@@ -32,23 +32,42 @@ body {
     display: flex;
     flex-direction: column;
     gap: 18px;
-
 }
 
-.sidebar-menu a {
+.sidebar-menu li{
+    list-style: none;
+    margin-bottom: 12px;
+    border-left: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+.sidebar-menu li.active{
+    border-left: 3px solid #d4af37;
+}
+
+.sidebar-menu li a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: #D9D9D9;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+
+/* .sidebar-menu a {
     text-decoration: none;
     color: #B8C1D1;
     font-size: 16px;
     font-weight: 500;
     border-radius: 10px;
-    /* display: block; */
     transition: 0.3s;
-    /* align-items: center; */
-
     display: flex;
     align-items: center;
     gap: 12px;
-}
+} */
 
 .sidebar-menu a:hover {
     color: #facc15;
@@ -98,11 +117,9 @@ main-content {
 
 .card {
     background: #1e293b;
-    padding: 25px;
+    padding: 28px;
     border-radius: 16px;
     width: 220px;
-
-    border: 1px solid rgba(#255, #255, #255, 0.05);
     transition: 0.3s;
 }
 
@@ -124,27 +141,33 @@ main-content {
 
 .user-profile {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     gap: 12px;
 }
 
 .user-profile img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 28px;
+    height: 28px;
 }
 
 .user-profile h4 {
     color: #D9D9D9;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 .user-profile span {
     color: #94A3B8;
     font-size: 14px;
+    margin-bottom: 5px;
 }
 
 .user-info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    justify-content: center;
+    gap: 5px; 
+    border-bottom: solid 1px #D9D9D9;
 }
+
