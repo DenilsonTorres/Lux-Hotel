@@ -152,6 +152,7 @@ main-content {
     border-radius: 16px;
     width: 220px;
     transition: 0.3s;
+
 }
 
 .card:hover {
@@ -159,9 +160,12 @@ main-content {
     border-color: E8c547;
 }
 
-.card h3 {
+
+.card, .card-content h3, h4 {
     color: #cbd5e1;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 2px;
+    font-size: 16px;
 }
 
 .card p {
@@ -170,6 +174,15 @@ main-content {
     font-weight: bold;
 }
 
+.card-content {
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.card-content img {
+    width: 25px;
+}
 .dashboard-content {
     display: flex;
     gap: 20px;
@@ -190,6 +203,7 @@ main-content {
 .chart-container h2 {
     color: #cbd5e1;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 canvas {
@@ -213,6 +227,10 @@ canvas {
     justify-content: center;
     height: 335px;
     width: 40%;
+}
+
+.reservas-recentes h2 {
+    font-size: 20px;
 }
 
 .table-header {
