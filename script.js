@@ -7,10 +7,10 @@ new Chart(ctx, {
     datasets: [
       {
         label: "Reservas",
-        data: [12, 19, 8, 15, 22, 18, 25],
+        data: [12, 19, 10, 16, 22, 18, 25],
         borderColor: "#f5c542",
         backgroundColor: "rgba(245, 197, 66, 0.2)",
-        tension: 0.4,
+        tension: 0.1,
         fill: true,
       },
     ],
