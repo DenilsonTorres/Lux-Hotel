@@ -20,11 +20,27 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
+}
 
+.sidebar {
+    transition: width 0.8s ease
+}
+
+.menu-toggle {
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #D9D9D9;
+    display: flex;
+    margin: 20px auto;
+    justify-content: center;
 }
 
 .logo img {
-    width: 140px;
+    width: 120px;
 }
 
 .sidebar-menu {
@@ -56,28 +72,27 @@ body {
     transition: 0.3s ease;
 }
 
-
-/* .sidebar-menu a {
-    text-decoration: none;
-    color: #B8C1D1;
-    font-size: 16px;
-    font-weight: 500;
-    border-radius: 10px;
-    transition: 0.3s;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-} */
-
 .sidebar-menu a:hover {
     color: #facc15;
     transform: translateX(5px);
-
 }
 
 .sidebar-menu img {
     width: 20px;
 }
+
+.sidebar.closed {
+    width: 100px;
+}
+
+.sidebar.closed span {
+    display: none;
+}
+
+.sidebar.closed a {
+    justify-content: center;
+}
+
 
 .bottom-sidebar {
     margin-top: auto;
@@ -122,10 +137,32 @@ body {
     border-bottom: solid 1px #D9D9D9;
 }
 
-main-content {
+.sidebar.closed .user-info {
+    display: none;
+}
+
+.main-content {
     flex: 1;
     padding: 40px;
 }
+
+.main-content {
+    transition: 0.3s ease;
+}
+
+.sidebar.closed+.main-content {
+    margin-left: 90px;
+}
+
+.sidebar.closed .logout span {
+    display: none;
+}
+
+.logout {
+    border-left: 3px solid #d4af37;
+}
+
+
 
 .topbar {
     display: flex;
@@ -183,6 +220,7 @@ main-content {
 .card-content img {
     width: 25px;
 }
+
 .dashboard-content {
     display: flex;
     gap: 20px;
@@ -197,7 +235,7 @@ main-content {
     border-radius: 20px;
     margin-top: 30px;
     height: 310px;
-    width: 60%;
+    width: 55%;
 }
 
 .chart-container h2 {
@@ -226,7 +264,7 @@ canvas {
     flex-direction: column;
     justify-content: center;
     height: 335px;
-    width: 40%;
+    width: 45%;
 }
 
 .reservas-recentes h2 {

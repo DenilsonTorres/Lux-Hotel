@@ -42,3 +42,11 @@ new Chart(ctx, {
     },
   },
 });
+
+const menuToggle = document.getElementById("menu-toggle");
+const sidebar = document.querySelector(".sidebar");
+
+menuToggle.addEventListener("click", () => {
+  console.log("Clicou");
+  sidebar.classList.toggle("closed");
+});

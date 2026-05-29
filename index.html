@@ -5,33 +5,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Lux Hotel</title>
         <link rel="stylesheet" href="./style/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+            rel="stylesheet" />
+
     </head>
     <body>
         <aside class="sidebar">
             <div class="logo">
                 <img src="components/images/lux-logo.svg" alt="Lux Hotel Logo">
             </div>
+            <button class="menu-toggle" id="menu-toggle">
+                <i class="ri-menu-fold-line"></i>
+            </button>
+
             <ul class="sidebar-menu">
                 <li class="active">
                     <a href="#">
                         <img src="./components/images/icons/House.svg" alt>
-                        Dashboard</a>
+                        <span>Dashboard</span>
+                    </a>
                 </li>
                 <li class="active">
                     <a href="#">
                         <img src="./components/images/icons/People.svg" alt>
-                        Hóspedes</a>
+                        <span>Hóspedes</span>
+                    </a>
                 </li>
                 <li class="active">
                     <a href="#">
                         <img src="./components/images/icons/Bed.svg"
                             alt>
-                        Quartos</a>
+                        <span>Quartos</span>
+                    </a>
                 </li>
                 <li class="active">
                     <a href="#">
                         <img src="./components/images/icons/Config.svg" />
-                        Configurações</a>
+                        <span>Configurações</span>
+                    </a>
                 </li>
             </ul>
             <div class="bottom-sidebar">
@@ -44,10 +56,10 @@
                             <span>Administrador</span>
                         </div>
                     </div>
-                    <li>
+                    <li class="active">
                         <a href="#">
                             <img src="./components/images/icons/Logout.svg" />
-                            Sair</a>
+                            <span>Sair</span></a>
                     </li>
                 </ul>
             </div>
