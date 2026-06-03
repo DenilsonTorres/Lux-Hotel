@@ -50,3 +50,9 @@ menuToggle.addEventListener("click", () => {
   console.log("Clicou");
   sidebar.classList.toggle("closed");
 });
+
+const logout = document.getElementById("logout");
+logout.addEventListener("click", () => {
+  localStorage.removeItem("logado");
+  window.location.href = "./login/login.html";
+});

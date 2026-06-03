@@ -11,6 +11,12 @@
 
     </head>
     <body>
+        <script>
+            const logado = localStorage.getItem("logado");
+                if(logado !== "true"){
+                window.location.href = "./login/login.html"
+        }
+        </script>
         <aside class="sidebar">
             <div class="logo">
                 <img src="components/images/lux-logo.svg" alt="Lux Hotel Logo">
@@ -45,6 +51,7 @@
                         <span>Configurações</span>
                     </a>
                 </li>
+
             </ul>
             <div class="bottom-sidebar">
                 <ul class="sidebar-menu">
@@ -59,7 +66,7 @@
                     <li class="active">
                         <a href="#">
                             <img src="./components/images/icons/Logout.svg" />
-                            <span>Sair</span></a>
+                            <span id="logout">Sair</span></a>
                     </li>
                 </ul>
             </div>
